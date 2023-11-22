@@ -1,0 +1,27 @@
+.search {
+	@apply relative flex w-2/6 items-center;
+
+	> input {
+		@apply relative z-10 h-min w-full border-none placeholder:uppercase;
+		&::placeholder {
+			letter-spacing: 0.2rem;
+		}
+		border-bottom: 2px solid gray;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&::before {
+		content: '';
+		@apply absolute -top-[150%] -left-2/4 -z-0 w-[140%] rounded-full bg-light-green pt-[140%];
+	}
+
+	.search_ico {
+		position: absolute;
+		z-index: 10;
+		right: 0;
+		bottom: 40%;
+	}
+}

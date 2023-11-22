@@ -1,0 +1,32 @@
+.menu {
+	@apply flex items-center gap-4;
+
+	> nav {
+		> ul {
+			@apply flex items-center gap-6;
+			> li {
+				> a {
+					@apply relative font-bold uppercase tracking-widest;
+
+					&::after {
+						content: '';
+						@apply absolute left-2/4 -bottom-3 h-0.5 w-0 bg-black transition-all duration-200;
+					}
+
+					&:hover::after {
+						@apply w-6/12;
+					}
+
+					&::before {
+						content: '';
+						@apply absolute right-2/4 -bottom-3 h-0.5 w-0 bg-black transition-all duration-200;
+					}
+
+					&:hover::before {
+						@apply w-6/12;
+					}
+				}
+			}
+		}
+	}
+}
