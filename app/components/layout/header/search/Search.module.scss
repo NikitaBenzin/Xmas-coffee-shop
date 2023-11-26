@@ -15,7 +15,7 @@
 
 	&::before {
 		content: '';
-		@apply absolute -top-[150%] -left-2/4 -z-0 w-[140%] rounded-full bg-light-green pt-[140%];
+		@apply absolute -top-[150%] -left-2/4 -z-10 w-[140%] rounded-full bg-light-green pt-[140%];
 	}
 
 	.search_ico {
